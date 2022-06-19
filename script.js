@@ -1,5 +1,14 @@
-const container = document.querySelector('#container');
+const container = document.querySelector('#gridContainer');
 
-const grid = document.createElement('div');
-grid.setAttribute('id', 'grid');
-container.appendChild(grid);
+
+
+let createGrid = () => {
+    const grid = document.createElement('div');
+    grid.setAttribute('id','gridItem');
+    gridContainer.appendChild(grid);
+}
+
+for (let i=0; i<16; i++){
+    createGrid();
+
+}
