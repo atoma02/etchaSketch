@@ -3,10 +3,40 @@
     margin: 0;
 }
 
-body{
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.etchaSketch {
     display: flex;
     justify-content: center;
-    padding-top: 5%;
+    width: 800px;
+    padding: 20px 10px 90px 125px;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: #e9724c;
+}
+
+#sketchPad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#title {
+    font-size: 54px;
+    font-family: 'Titillium', Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+}
+
+.buttons {
+    padding-top: 100px;
 }
 
 button {
@@ -15,13 +45,18 @@ button {
     height: 30px;
     padding: 15px;
     margin: 20px;
+    border: black solid 2px;
+    border-radius: 8px;
+    background-color: palegoldenrod;
 }
 
 #gridContainer {
-    border: 10px solid navy;
+    border: 5px solid;
+    border-radius: 5px;
     width: 600px;
     height: 600px;
     display: grid;
+    background-color: aliceblue;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
 }
